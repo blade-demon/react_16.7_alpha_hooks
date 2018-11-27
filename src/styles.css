@@ -1,4 +1,65 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.light label {
+  margin: 1rem;
+  color: rgba(32, 31, 31, 0.418);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.light label::before {
+  content: "---- ";
+}
+
+.light label::after {
+  content: "  ----";
+}
+
+input {
+  margin: 0.5rem;
+  background-color: #bea845f3;
+  border: #bea845f3;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.light {
+  background: #bea845f3;
+  padding: 1rem;
+}
+.light h1 {
+  color: black;
+}
+
+.dark {
+  background: #ff0000;
+  padding: 1rem;
+}
+
+.dark h1 {
+  color: white;
+}
+
+.dark input {
+  background: #ff0000;
+  color: white;
+}
+
+.dark label {
+  color: antiquewhite;
+}
+
+.dark label::before {
+  content: "****  ";
+}
+
+.dark label::after {
+  content: "  ****";
 }

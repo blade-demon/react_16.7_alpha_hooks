@@ -1,17 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 
-export const themes = {
-  light: {
-    foreground: "#000000",
-    background: "#eeeeee"
-  },
-  dark: {
-    foreground: "#ffffff",
-    background: "#222222"
-  }
-};
-
-export const language = "English";
-
+export const themes = { light: "light", dark: "dark" };
 export const ThemeContext = React.createContext({ themes });
-export const LocaleContext = React.createContext({ language });
+export const LocaleContext = React.createContext({ language: "English" });
